@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0%;
+  
+}
+
+
+
+
+body,.gradient {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+width: 100vw;
+background: linear-gradient(45deg, #f1f6f9, #14274e);
+background-size: 300%, 300%;
+animation: colors 15s ease infinite;
+font-family: "Poppins", sans-serif;
+    
+    
+}
+
+button {
+    background-color: #394867;
+    border: none;
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+}
+
+button.active {
+    transform: translateX(-180px);
+}
+
+nav {
+    background-color: #9ba4b4;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav.active {
+    transform: translateX(0);
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 1rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 0;
+    align-content: center;
+}
+
+.title-nav{
+    color: black;
+    font-size: 1.4rem;
+}
+
+p{
+    color: #31326f;
+    size: 2rem;
+    font-size: large;
+    font-style: inherit;
+}
+
+
+.rodape {
+    grid-area: f / f / f / f;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    
+}
+
+@keyframes colors {
+    0% {
+     background-position: 0% 50%;
+    }
+    50% {
+     background-position: 100% 50%;
+    }
+    100% {
+     background-position: 0% 50%;
+    }
+    }
+    @media (max-width: 600px) {
+        .nome {
+         font-size: 1.5rem;
+         padding: 1rem 2rem;
+        }
+        }
