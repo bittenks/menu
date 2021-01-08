@@ -72,6 +72,10 @@ nav a {
     align-content: center;
 }
 
+nav ul li :hover {
+    color: #394867;
+}
+
 .title-nav{
     color: black;
     font-size: 1.4rem;
