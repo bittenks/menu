@@ -117,4 +117,9 @@ p{
          font-size: 1.5rem;
          padding: 1rem 2rem;
         }
+
+        
+    button.active {
+    transform: translateX(-200px);
+}
         }

@@ -10,3 +10,4 @@ nav.addEventListener("mouseleave", () =>{
     btn.classList.toggle("active");
     
 })
+
